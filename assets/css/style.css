@@ -1069,7 +1069,7 @@ section {
 }
 /*  Navbar fixd page */
 .subpage-nav {
-  display: block !important;
+  display: block ;
   position: relative;
   animation: 1s ease-out 0s 1 slideInFromLeft;
   /*animation-duration: 1s; /* the duration of the animation 
@@ -1100,4 +1100,13 @@ animation-name: slideInFromLeft; /* the name of the animation we defined above *
     width: auto;
     padding-right: 20px 15px;
   }
+  @media only screen and (max-device-width: 480px) {
+    #header{ display:none !important;
+	}
+	.subpage-nav{
+		display:none !important;
+	}
+	#main{ width:100%;
+	}
+}
 }
